@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
 * Студент: [Евгений Конников-Лейманн](https://up.htmlacademy.ru/javascript/15/user/447687).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Конников-Лейманн](https://up.htmlacademy.ru/javascript/15/user/447687).
 
 ---
 
