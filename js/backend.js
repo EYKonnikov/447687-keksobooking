@@ -1,5 +1,6 @@
 'use strict';
 
+// Server message
 
 (function () {
   var Code = {
