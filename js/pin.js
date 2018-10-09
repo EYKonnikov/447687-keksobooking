@@ -2,6 +2,11 @@
 
 (function () {
 
+  var LOCATION_MIN_X = -32;
+  var LOCATION_MAX_X = 1230;
+  var LOCATION_MIN_Y = 90;
+  var LOCATION_MAX_Y = 685;
+
   window.makePinsElements = function (data) {
     var mapPinsList = document.querySelector('.map__pins');
     var fragmentPin = document.createDocumentFragment();
@@ -79,11 +84,6 @@
   var dragAndDropMainPin = function () {
     var mainPin = document.querySelector('.map__pin--main');
     var adFormAddress = document.querySelector('input[name=address]');
-
-    var LOCATION_MIN_X = -32;
-    var LOCATION_MAX_X = 1230;
-    var LOCATION_MIN_Y = 90;
-    var LOCATION_MAX_Y = 685;
 
     // Точки главной метки при загрузки страницы
     var pointOfPinX = Math.round(mainPin.offsetLeft);

@@ -151,6 +151,7 @@
   };
 
   form.addEventListener('submit', function (evt) {
+    formAddress.removeAttribute('disabled');
     window.backend.sendData(new FormData(form), buttonSubmitHandler, window.errorHandler);
     evt.preventDefault();
   });
