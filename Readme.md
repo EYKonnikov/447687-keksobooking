@@ -18,6 +18,7 @@ The only action available in the inactive state is to drag the label .map__pin--
 Active state. In the active state, the page allows you to make changes to the form and send it to the server, view similar ads on the map, filter them and specify detailed information about them, showing a card for each of the ads.
 
 1. Filling in information
+
 1.1. Filling in information and sending data:
 
 header;
@@ -87,6 +88,7 @@ Manual editing of the field is prohibited. The value is automatically set when t
 There are different ways to limit the allowed values of the number of places field: removing the corresponding option elements from the markup, adding the disabled state to the option elements, or other ways to limit them, for example, using the setCustomValidity method.
 
 3. Map address selection:
+
 3.1. The approximate address of the apartment is indicated by dragging a special label on the map of Tokyo. When you move, the value of the corresponding input field changes. The contents of the address field can not be empty: immediately after loading the page and after resetting the form, the value must match the coordinates of the label.
 
 3.2. The format of the address field value is {{x}}, {{y}}, where {{x}} and {{y}} are the coordinates to which the label points with its sharp end (the middle of the lower edge of the labeled block).
@@ -101,6 +103,7 @@ When the limit of movement of the marker horizontally as possible to take into a
 3.5. When you reset the form, the page returns to its original inactive state and the label moves to its original coordinates. The corresponding value of the address input field must also be updated.
 
 4. Comparison with similar ads
+
 4.1. The full list of similar ads is loaded after the page is active from the server https://js ahhh!dump.academy/keksobooking / data. Each of the ads is shown on the map as a special label: a block having the map__pin class. Template element for the label .map__pin is in template. The layout of each label should be similar to the template element.
 
 4.2. When you click on the label of a similar ad, a card containing detailed information about the ad is displayed. The layout of the card should be based on a template element .map__card located in the template element. The data in the card is inserted in the same way as the data inserted in the template card as an example. If there is not enough data to fill in, the corresponding block in the card is hidden. For example, if the ad does not specify any convenience, you need to hide the block .popup__features. Immediately after switching to active mode, the card is not displayed, it is shown only after clicking on one of the labels. This adds a class to the active label .map__pin--active. Click the label .map__pin--main does not display the card.
@@ -127,4 +130,5 @@ Filtering is performed when the values of the corresponding fields of the form a
 4.9. When you change filters, the card showing details of a similar ad should be hidden.
 
 5. Availability and active elements:
+
 5.1. Interaction with all active elements on the page should be available not only with the cursor and clicks on them, but also with the keyboard: all active elements should focus and respond to the Enter key as well as to the click.
